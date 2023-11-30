@@ -10,6 +10,13 @@ body {
   color: #FEF2BF;
 }
 
+@keyframes highlight{
+  0% { border: 5px solid red; }
+  100% {border: 2px solid black;}
+}
+
+
+
 .container {
   display: block;
   width: 50%;
@@ -37,6 +44,10 @@ body {
 
 .green {
   background-color: green;
+}
+
+.green.highlighted{
+  animation: highlight 0.5s ease-in-out;
 }
 
 .blue {
